@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--Login Page-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Van Rah Sign Up</title>
+    <link rel="stylesheet" href="Login.css">
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="facebook-page flex">
+        <div class="text">
+          <h1>VAN RAH</h1>
+          <p>Sign Up to contribute in Ecotourism </p>
+          <p> with us on VAN RAH</p>
+        </div>
+        <form action="#">
+          <input type="email" placeholder="Email or phone number" required>
+          <input type="password" placeholder="Password" required>
+          <div class="link">
+            <button type="submit" class="login">Login</button>
+            <a href="#" class="forgot">Forgot password?</a>
+          </div>
+          <hr>
+          <div class="button">
+            <button type="submit" class="login"><a href="index.html">Create account</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      function Login(){
+        var email = document.getElementById("email").value;
+        var paassword = document.getElementById("password").value;
+        if(email== "admin@gmail.com" && password =="123"){
+          window.location.assign("index.html");
+          alert("Login Successful");
+      }
+      else{
+        alert("Login Failed");
+        return;
+      }
+    }
+    </script>
+  </body>
+</html>
